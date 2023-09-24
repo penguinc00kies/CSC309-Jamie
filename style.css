@@ -10,11 +10,17 @@
 body { 
     padding: 0; 
     margin: 0;
+    background-color: blanchedalmond;
 }
 
 header {
     grid-area: head;
     background-color: #444;
+}
+
+footer {
+    grid-area: foot;
+    background-color: brown;
 }
 
 ul {
@@ -27,7 +33,7 @@ li {
     display: inline;
 }
 
-li a {
+header ul li a {
     font-weight: bold;
     color: skyblue;
     display: inline-block;
@@ -45,7 +51,7 @@ li a:hover {
                          'main'
                          'foot';
     grid-template-rows: 5rem auto;
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
 }
 
