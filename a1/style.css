@@ -7,26 +7,31 @@
  * Fall 2023
  *
  */
-body { 
-    padding: 0; 
+* {
     margin: 0;
-    background-color: blanchedalmond;
+    padding: 0;
+}
+
+body {
+    background-color: cornsilk;
 }
 
 header {
     grid-area: head;
     background-color: #444;
+    height: 5rem;
 }
 
 footer {
     grid-area: foot;
     background-color: brown;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 li {
@@ -35,23 +40,41 @@ li {
 
 header ul li a {
     font-weight: bold;
-    color: skyblue;
+    color: #00b8d4;
     display: inline-block;
     padding: 2rem 1rem 2rem 1rem;
     text-decoration: none;
 }
 
-li a:hover {
+h1 {
+    color: chartreuse;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+#current_page {
+    color: #b2f5ea;
+}
+
+li a:hover, #current_page:hover {
     color: white;
 }
 
-.container {
+.section {
     display: grid;
     grid-template-areas: 'head'
-                         'main'
                          'foot';
-    grid-template-rows: 5rem auto;
-    min-height: 50vh;
     width: 100%;
 }
 
+.center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;
+}
+
+button {
+    margin-top: 2rem;
+}
