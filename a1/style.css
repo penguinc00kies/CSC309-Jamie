@@ -10,9 +10,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-body {
+main {
+    grid-area: main;
     background-color: cornsilk;
 }
 
@@ -25,16 +27,15 @@ header {
 footer {
     grid-area: foot;
     background-color: brown;
+    color: white;
     height: 5rem;
-    position: absolute;
-    bottom: 0;
 }
 
-ul {
+header ul {
     list-style-type: none;
 }
 
-li {
+header li {
     display: inline;
 }
 
@@ -50,20 +51,62 @@ h1 {
     color: chartreuse;
     font-weight: bold;
     padding: 2rem;
+    font-size: 60px;
 }
 
-#current_page {
-    color: #b2f5ea;
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+summary {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+details ul {
+    text-align: left;
+    display: inline-block;
+    padding: 1rem;
+    font-size: large;
+}
+
+div embed {
+    width: 50vw;
+    max-width: 720px;
+    height: 60vh;
+    padding: 1rem;
+}
+
+div.imgDiv {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto;
+    padding-top: 100px;
 }
 
 li a:hover, #current_page:hover {
     color: white;
 }
 
+button {
+    margin-top: 2rem;
+    padding: 10px;
+}
+
 .section {
     display: grid;
     grid-template-areas: 'head'
+                         'main'
                          'foot';
+    /* width: 100%;
+    min-height: 100vh; */
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto 5rem;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -75,8 +118,6 @@ li a:hover, #current_page:hover {
     width: 50;
 }
 
-button {
-    margin-top: 2rem;
-    padding: 10px;
+#current_page {
+    color: #b2f5ea;
 }
-
