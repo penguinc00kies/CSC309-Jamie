@@ -180,6 +180,10 @@ button:hover {
     border-color: #FFF;
 }
 
+label {
+    padding: 0.5rem;
+}
+
 .rightlabel {
     width: auto;
     text-align: left;
@@ -289,15 +293,17 @@ details > summary {
     }
     
     .rightlabel {
-        margin-left: 5vw;
+        margin-left: auto;
         width: 100v;
         text-align: left;
+        background-color: black;
     }
 
     .textlabel {
-        margin-left: 5vw;
+        margin-left: auto;
         width: 100v;
         text-align: left;
+        background-color: black;
     }
 
     #submit {

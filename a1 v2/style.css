@@ -1,0 +1,83 @@
+/*
+ * style.css
+ *
+ * CSC309 Assignment 1
+ * 
+ * University of Toronto
+ * Fall 2023
+ *
+ */
+
+/* ----STYLES FOR ALL---- */
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.halfrempadding {
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ----STYLES FOR All END---- */
+
+/* ----STYLES FOR HEADING---- */
+
+header {
+    grid-area: head;
+    background-color: #333;
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+}
+
+.headercontainer {
+    padding: 1rem;
+    text-align: center;
+}
+
+.headercontainer > a {
+    color: #00B8D4;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#currentpage {
+    color: #B2F5EA;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* ----STYLES FOR HEADING END---- */
+
+/* ----STYLES FOR BODY---- */
+
+body {
+    background-color: #BBBBBB;
+    height: auto;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    padding-top: 128px;
+}
+
+/* ----STYLES FOR BODY END---- */
+
+/* ----STYLES FOR FOOTER---- */
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 3rem;
+    text-align: center;
+}
+
+/* ----STYLES FOR FOOTER END---- */
