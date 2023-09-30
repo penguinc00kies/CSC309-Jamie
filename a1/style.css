@@ -7,28 +7,31 @@
  * Fall 2023
  *
  */
-* {
+ * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #BBBBBB;
 }
 
 main {
     grid-area: main;
-    background-color: cornsilk;
 }
 
 header {
     grid-area: head;
     background-color: #444;
-    height: 5rem;
+    height: 70px;
 }
 
 footer {
     grid-area: foot;
-    background-color: brown;
+    background-color: #333;
     color: white;
-    height: 5rem;
+    height: 3rem;
 }
 
 header ul {
@@ -40,18 +43,49 @@ header li {
 }
 
 header ul li a {
-    font-weight: bold;
     color: #00b8d4;
     display: inline-block;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 22px 1rem 22px 1rem;
     text-decoration: none;
+    font-size: 18.2px;
 }
 
 h1 {
-    color: chartreuse;
+    color: #333;
     font-weight: bold;
-    padding: 2rem;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
     font-size: 60px;
+}
+
+h2 {
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+form {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+input {
+    width: 50vw;
+    height: 30px;
+    font-size: 16px;
+    max-width: 90%;
+    padding: 0.8rem;
+}
+
+textarea {
+    width: 50vw;
+    max-width: 90%;
+    resize: none;
+    padding: 0.8rem;
 }
 
 img {
@@ -97,27 +131,89 @@ button {
     padding: 10px;
 }
 
+button:hover {
+    background-color: #00b8d4;
+}
+
+.rightlabel {
+    width: auto;
+    text-align: left;
+}
+
 .section {
     display: grid;
     grid-template-areas: 'head'
                          'main'
                          'foot';
-    /* width: 100%;
-    min-height: 100vh; */
     grid-template-columns: auto;
-    grid-template-rows: 80px auto 5rem;
+    grid-template-rows: 70px auto 3rem;
     min-height: 100vh;
     width: 100%;
+}
+
+.responsive {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 10px;
 }
 
 .center {
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50;
+    margin: auto;
+}
+
+.textlabel {
+    text-align: right;
+    padding-right: 1rem;
 }
 
 #current_page {
     color: #b2f5ea;
+    font-weight: bold;
+}
+
+#consent {
+    width: initial;
+}
+
+#submit {
+    margin-left: 0;
+}
+
+#emaillink {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 800px) {
+    .responsive {
+        display: grid;
+        grid-template-columns: 90vw;
+    }
+
+    input {
+        margin: auto;
+        width: 100%;
+    }
+    
+    textarea {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .rightlabel {
+        margin-left: 5vw;
+        width: 100v;
+        text-align: left;
+    }
+
+    .textlabel {
+        margin-left: 5vw;
+        width: 100v;
+        text-align: left;
+    }
+
+    #submit {
+        margin-left: 5vw;
+    }
 }

@@ -18,7 +18,7 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a id="current_page" href="contact.html">Contact</a></li>
+      <li><a href="contact.html" id="current_page">Contact</a></li>
     </ul>
   </header>
   <main>
@@ -26,8 +26,30 @@
       <img src="Foot_Phone.jpg" alt="Me">
     </div>
     <h1 class="center">Hi, I'm Jamie!</h1>
-    <h3><a href="mailto:jamie.yi@mail.utoronto.ca?subject=Bug%20Found&body=I%20found%20the%20following%20bug%20on%20your%20website%0a%0a">jamie.yi@mail.utoronto.ca</a></h3>
-    </main>
+    <h2><a class="center" id="emaillink" href="mailto:jamie.yi@mail.utoronto.ca?subject=Bug%20Found&body=I%20found%20the%20following%20bug%20on%20your%20website%0a%0a">jamie.yi@mail.utoronto.ca</a></h2>
+    <form action="https://postman-echo.com/post" method="post">
+      <div class="responsive" class="center">
+        <div class="textlabel"><label class="leftlabel" for="email">Your Email: </label></div>
+        <input type="text" name="email" id="email" required>
+      </div>
+      <div class="responsive">
+        <div class="textlabel"><label class="leftlabel" for="feedback">Feedback: </label></div>
+        <textarea name="feedback" id="feedback" value="feedback" rows="6"></textarea required>
+      </div>
+      <div class="responsive">
+        <div class="textlabel"><label class="leftlabel" for="attachments">Attachment: </label></div>
+        <input type="file" name="attachments" id="attachments" value="attachments" required>
+      </div>
+      <div class="responsive">
+        <input type="checkbox" name="consent" id="consent" value="consent" required>
+        <label for="consent" class="rightlabel">You agree to receive emails from me</label>
+      </div>
+      <div class="responsive">
+        <div class="textlabel"></div>
+        <button class="center" type="submit" value="submit" id="submit">Sumbit Feedback</button>
+      </div>
+    </form>
+  </main>
   <footer>
     Copyright me &#58;p
   </footer>
