@@ -52,6 +52,13 @@ header ul li a {
     font-size: 18.2px;
 }
 
+p {
+    padding-top: 24px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 h1 {
     color: #333;
     font-weight: bold;
@@ -110,10 +117,10 @@ details ul {
 }
 
 div embed {
-    width: 50vw;
+    width: 100%;
     max-width: 720px;
     height: 60vh;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 div.imgDiv {
