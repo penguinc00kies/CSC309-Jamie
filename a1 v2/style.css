@@ -22,6 +22,44 @@
     align-items: flex-start;
 }
 
+button, #aboutbutton {
+    text-align: center;
+    border-radius: 4px;
+    border-color: #007EA8;
+    border: 2px solid #007EA8;
+    font-weight: 700;
+    font-size: 16px;
+    color: #007EA8;
+    background-color: #FFF;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    display: block;
+    margin: auto;
+}
+
+#aboutbutton {
+    width: 89px;
+    text-decoration: none;
+}
+
+button:hover, #aboutbutton:hover {
+    background-color: #007EA8;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-color: #FFF;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'head'
+                         'main'
+                         'foot';
+    grid-template-columns: auto;
+    grid-template-rows: 70px auto 3rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
 /* ----STYLES FOR All END---- */
 
 /* ----STYLES FOR HEADING---- */
@@ -39,7 +77,7 @@ header {
     text-align: center;
 }
 
-.headercontainer > a {
+.headercontainer>a {
     color: #00B8D4;
     font-size: 18px;
     font-style: normal;
@@ -53,20 +91,59 @@ header {
     font-weight: 700;
 }
 
+#currentpage:hover {
+    color: white;
+}
+
+.headercontainer>a:hover {
+    color: white;
+}
+
 /* ----STYLES FOR HEADING END---- */
 
 /* ----STYLES FOR BODY---- */
 
 body {
     background-color: #BBBBBB;
-    height: auto;
+}
+
+main {
+    grid-area: main;
 }
 
 .image {
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    padding-top: 128px;
+    padding: 128px 16px 16px 16px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+#greeting {
+    padding: 14px;
+    color: #333;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#description {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 23.5px;
 }
 
 /* ----STYLES FOR BODY END---- */
@@ -74,10 +151,24 @@ body {
 /* ----STYLES FOR FOOTER---- */
 
 footer {
+    grid-area: footer;
     background-color: #333;
     color: white;
     height: 3rem;
     text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#footertext {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 14px;
 }
 
 /* ----STYLES FOR FOOTER END---- */
