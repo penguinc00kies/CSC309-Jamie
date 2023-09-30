@@ -31,15 +31,15 @@ button, #aboutbutton {
     font-size: 16px;
     color: #007EA8;
     background-color: #FFF;
-    padding: 10px 20px 10px 20px;
+    padding: 9px 20px 8px 20px;
     margin: auto;
     display: block;
-    margin: auto;
 }
 
 #aboutbutton {
     width: 89px;
     text-decoration: none;
+    margin-bottom: 128px;
 }
 
 button:hover, #aboutbutton:hover {
@@ -50,14 +50,15 @@ button:hover, #aboutbutton:hover {
 }
 
 .container {
-    display: grid;
+    /* display: grid;
     grid-template-areas: 'head'
                          'main'
                          'foot';
     grid-template-columns: auto;
-    grid-template-rows: 70px auto 3rem;
+    grid-template-rows: 70px auto 3rem; */
     min-height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 /* ----STYLES FOR All END---- */
@@ -126,6 +127,35 @@ img {
     border-radius: 100%;
 }
 
+/* ----STYLES FOR BODY END---- */
+
+/* ----STYLES FOR FOOTER---- */
+
+footer {
+    grid-area: foot;
+    background-color: #333;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+}
+
+#footertext {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 14px;
+}
+
+/* ----STYLES FOR FOOTER END---- */
+
+/* ----STYLES FOR INDEX---- */
+
 #greeting {
     padding: 14px;
     color: #333;
@@ -143,32 +173,67 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 2px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 23.5px;
 }
 
-/* ----STYLES FOR BODY END---- */
+/* ----STYLES FOR INDEX END---- */
 
-/* ----STYLES FOR FOOTER---- */
+/* ----STYLES FOR ABOUT---- */
 
-footer {
-    grid-area: footer;
-    background-color: #333;
-    color: white;
-    height: 3rem;
+#aboutme {
+    color: #333;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 128px;
     text-align: center;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;  
+    padding-bottom: 1rem; 
 }
 
-#footertext {
-    color: #FFF;
-    text-align: center;
-    font-size: 15px;
+details {
+    color: #333;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 14px;
+    padding-top: 1rem;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 24px;
 }
 
-/* ----STYLES FOR FOOTER END---- */
+details ul {
+    text-align: left;
+    display: inline-block;
+    padding: 1rem;
+}
+
+#acknowledgement {
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+
+#pdf {
+    padding-top: 23px;
+    height: 60vh;
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    display: block;
+    padding-bottom: 128px;
+}
+
+/* ----STYLES FOR ABOUT END---- */
