@@ -193,6 +193,10 @@ footer {
 /* ----STYLES FOR INDEX END---- */
 
 /* ----STYLES FOR ABOUT---- */
+#aboutheader {
+    margin-bottom: 128px;
+}
+
 
 #aboutme {
     color: #333;
@@ -200,7 +204,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 128px;
+    margin-top: 128px;
     text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem; 
@@ -236,15 +240,11 @@ details ul {
     text-align: center;
 }
 
-embed {
-    padding-bottom: 128px;
-}
-
 #pdf {
     padding-top: 23px;
     min-height: 60vh;
     height: 60vh;
-    max-height: 60vh;
+    max-height: 648px;
     width: 100%;
     max-width: 720px;
     margin: auto;
@@ -369,6 +369,7 @@ form {
     display: flex;
     justify-content: right;
     padding-top: 32px;
+    padding-right: 8px;
 }
 
 #consentinput>input {
@@ -404,14 +405,17 @@ form {
 }
 
 #sub>button {
+    width: 141.8px;
+    height: 38px;
     font-size: 14px;
     margin: 0 auto;
     margin-top: 16px;
+    margin-left: 8px;
     display: block;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
     .responsive {
         display: grid;
         grid-template-areas: 'email' 
@@ -457,7 +461,7 @@ form {
     }
 
     #attachmentinput>input {
-        width: 395.5;
+        width: 395.5px;
     }
 
     #consentinput {
@@ -468,6 +472,7 @@ form {
 
     #consentlabel>label {
         padding-left: 5px;
+        margin-left: 5px;
     }
 
 }

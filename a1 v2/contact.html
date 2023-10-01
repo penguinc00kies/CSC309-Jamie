@@ -26,16 +26,16 @@
       <img src="Foot_Phone.jpg" alt="Me">
     </div>
     <h1 id="fullname">Jamie Yi</h1>
-    <p id="emaillink"><a class="center" href="mailto:jamie.yi@mail.utoronto.ca?subject=Bug%20Found&body=I%20found%20the%20following%20bug%20on%20your%20website%0d%0a%0d%0a%0d%0a">jamie.yi@mail.utoronto.ca</a></p>
-    <form action="https://postman-echo.com/post" method="post">
+    <p id="emaillink"><a class="center" href="mailto:jamie.yi@mail.utoronto.ca?subject=Bug%20Found&body=I%20found%20the%20following%20bug%20on%20your%20website%3A%0a%0a">jamie.yi@mail.utoronto.ca</a></p>
+    <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
       <div class="responsive">
         <div id="emaillabel"><label for="emailinput">Your Email:</label></div>
         <div id="emailinput"><input name="email" type="email" required></div>
         <div id="feedbacklabel"><label for="feedbackinput">Feedback:</label></div>
-        <div id="feedbackinput"><textarea name="feedback" rows="5" cols="22" placeholder="Enter your feedback here" required></textarea></div>
+        <div id="feedbackinput"><textarea name="feedback" cols="22" placeholder="Enter your feedback here" required></textarea></div>
         <div id="attachmentlabel"><label for="attachmentinput">Attachment:</label></div>
         <div id="attachmentinput"><input name="attachments" type="file" required></div>
-        <div id="consentinput"><input name="consent" type="checkbox" required></div>
+        <div id="consentinput"><input name="consent" type="checkbox" value="yes"></div>
         <div id="consentlabel"><label for="consentinput">You agree to receive emails from me</label></div>
         <div id="spacer"></div>
         <div id="sub"><button type="submit" id="submit">Send Feedback</button></div>
