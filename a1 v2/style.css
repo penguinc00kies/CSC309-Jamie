@@ -188,6 +188,7 @@ footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 /* ----STYLES FOR INDEX END---- */
@@ -416,6 +417,7 @@ form {
 
 
 @media screen and (max-width: 480px) {
+
     .responsive {
         display: grid;
         grid-template-areas: 'email' 
@@ -472,7 +474,14 @@ form {
 
     #consentlabel>label {
         padding-left: 5px;
-        margin-left: 5px;
+    }
+
+    header {
+        width: 438px;
+    }
+
+    footer {
+        width: 438px;
     }
 
 }
