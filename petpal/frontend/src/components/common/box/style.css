@@ -1,0 +1,47 @@
+div.round-rect {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    background-color: #E6C5AD;
+    border-color: rgba(146, 154, 104, 0.7);
+    border-style: solid;
+    border-radius: 7%;
+    border-width: 1rem;
+    width: 40%;
+    min-width: 315px;
+    height: 90%;
+    box-shadow: 0 2rem 2rem #00000080;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.round-rect.landing {
+
+    margin-right: 5%;
+    margin-left: 5%;
+    align-self: center;
+    justify-content: baseline;
+    align-items: center;
+    justify-self: right;
+}
+
+.round-rect.center {
+    margin-right: 1%;
+    margin-left: 1%;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.round-rect.right {
+
+    margin-right: 5%;
+    margin-left: 5%;
+    align-self: center;
+    justify-content: baseline;
+    align-items: center;
+    justify-self: right;
+}
+

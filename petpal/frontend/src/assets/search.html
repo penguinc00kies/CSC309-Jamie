@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+  CSC309 PetPal Project
+  
+  University of Toronto
+  Fall 2023
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Search</title>
+    <!-- Add Bootstrap styling alongside custom css. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="search">
+    <div class="page-container">
+        <header>
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images/temp-logo.webp">
+            </a>
+
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#CollapsedNav" aria-controls="CollapsedNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="CollapsedNav">
+
+
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">NAVIGATION</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"></ul>
+                            <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
+                            <a class="nav-link disabled" aria-disabled="true" href="#">Pets</a>
+                            <a class="nav-link disabled" aria-disabled="true" href="#">Applications</a>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Notifications
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Profile
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="profile"><img class="pfp" src="images/profile.jpg" alt="Profile"> </div>
+                                    </li>
+                                    <li>
+                                        <p class="dropdown-item">Username</p>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="account_update.html">Edit Profile</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link disabled" aria-disabled="true" href="#">Log Out</a>
+                            <a class="nav-link" href="#">Search</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </nav>
+        </header>
+        <main>
+            <h3 id="landingtitle">Featured friends</h3>
+            <div class="featured">
+                <div class="card" id="firstcard">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/featured-cat.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Babygirl</h5>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card" id="secondcard">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/featured-cat2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Leo Hunter</h5>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card" id="thirdcard">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/featured-dog.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mila</h5>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="textcenter">Time to find your furever friend</h3><br>
+            <div class="searchelements">
+                <div class="searchform">
+                    <form action="search_filter.html" id="searchform">
+                        <select id="filter" name="filter">
+                            <option value="All Categories">Filter By</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Shelter">Shelter</option>
+                        </select>
+                        <input type="text" id="searchbar" name="searchbar">
+                        <button type="submit" id="submit">Search!</button>
+                        <select id="sort" name="sort">
+                            <option value="All Categories">Sort By</option>
+                            <option value="Name">Name</option>
+                            <option value="Age">Age</option>
+                            <option value="Availability">Availability</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <h3 class="searchmessage">Search results for: filter=""</h3>
+            <div class="searchresults">
+                <div class="searchitem card">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/result-cat.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Beanz</h5>
+                        <p class="card-text">Gender : Female<br>Neutered : Spayed<br>Breed : Domestic Shorthair,Mix<br>Age : 12 Years 5 Months<br> On Hold : No</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="searchitem card">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/result-cat2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Moji</h5>
+                        <p class="card-text">Gender : Female<br>Neutered : Spayed<br>Breed : Domestic Shorthair,Mix<br>Age : 3 Years 7 Months<br>On Hold : No</p >
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="searchitem card">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/result-cat3.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cola</h5>
+                        <p class="card-text">Gender : Female<br>Neutered : Spayed<br>Breed : Domestic Longhair<br>Age : 12 Years 4 Months<br>On Hold : No</p >
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="searchitem card">
+                    <div class="imgcontainer">
+                        <img class="card-img-top" src="images/result-cat4.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coal</h5>
+                        <p class="card-text">Gender : Male<br> Neutered : Neutered<br>Breed : American,American<br>Age : 1 Year 10 Months<br>On Hold : No</p >
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Copyright Charlie, Dina, Jamie, Selin 2023</footer>
+    </div>
+
+    <!-- Import Bootstrap JavaScript bundle. -->
+    <script src="images/https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

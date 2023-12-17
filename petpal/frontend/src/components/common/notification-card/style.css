@@ -1,0 +1,46 @@
+div.card-body.not {
+    color: #334226;
+    background-color: whitesmoke;
+    border-color: #334226;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7%;
+
+}
+
+div.card.not {
+    border-radius: 7%;
+}
+
+.card-title.h5 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.card-body .card-text {
+    align-self: center;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+    margin-bottom: 16px;
+
+}
+
+a.btn-secondary, Button.btn.btn-secondary {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: #334226;
+    background-color: #334226;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+    margin-top: 6px;
+}
+a.btn-secondary:hover, a.btn-secondary:focus {
+    color: whitesmoke;
+    background-color: rgba(146, 154, 104, 0.7)
+}
+
